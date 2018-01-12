@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_principal"
+            android:icon="@mipmap/ic_menu_principal"
+            android:title="@string/principal" />
+        <item
+            android:id="@+id/nav_meus_locais"
+            android:icon="@mipmap/ic_menu_meus_locais"
+            android:title="@string/meus_locais" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@mipmap/ic_menu_perfil"
+            android:title="@string/perfil" />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@mipmap/ic_menu_sair"
+            android:title="@string/sair" />
+    </group>
+
+
+
+</menu>

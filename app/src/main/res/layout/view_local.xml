@@ -1,0 +1,343 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.psousa.findeasy.fragment.ViewLocal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="21dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="Local Fulano de Tal"
+                        android:id="@+id/edt_view_local_nome"/>
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="12dp"
+                        android:textAlignment="center"
+                        android:text="Av. Cliclano de Tal, 955 Goiania - GO"
+                        android:id="@+id/edt_view_local_endereco"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="12dp"
+                        android:textAlignment="center"
+                        android:text="(62) 3333-3215"
+                        android:id="@+id/edt_view_local_telefone"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="11dp"
+                        android:textStyle="italic"
+                        android:textAlignment="center"
+                        android:text="Casa de Software"
+                        android:id="@+id/edt_view_local_categoria"/>
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/atendimento"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:layout_gravity="center"
+                                android:rating="5.0"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:stepSize="1.0"
+                                android:id="@+id/rt_view_local_atendimento"/>
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/qualidade"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:layout_gravity="center"
+                                android:rating="5.0"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:stepSize="1.0" />
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/limpesa"
+                                android:textAlignment="center"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:layout_gravity="center"
+                                android:rating="5.0"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:stepSize="1.0" />
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                />
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/velocidade"
+                                    android:textAlignment="center"
+                                    android:textSize="10dp"
+                                    android:textStyle="bold" />
+
+                                <RatingBar
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"
+                                    android:layout_gravity="center"
+                                    android:rating="5.0"
+                                    style="?android:attr/ratingBarStyleSmall"
+                                    android:stepSize="1.0"
+                                    android:id="@+id/rt_view_local_velocidade"/>
+                                <View
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp" >
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/fotos_local"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        />
+                    <HorizontalScrollView
+                        android:id="@+id/horizontal_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/linear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="90dp" />
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp" >
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/produtos_servicos"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        />
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lst_view_local_produto_servico">
+
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
